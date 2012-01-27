@@ -1,0 +1,3 @@
+Example run of pipeline, outputs a ".translit" output file in test directory, with OOVs in 1best output transliterated. Translit module trained and used in $rundir/translit directory
+
+perl $JOSHUA/scripts/training/translit/pipelineWTranslit.pl --corpus /my/data/training --source ur --target en --tune /my/tuning/data/dev --test /my/test/data/devtest --maxlen 40 --type hiero --translit --translit-data /my-list-of-word-or-phrase-transliteration-pairs/name_pairs
